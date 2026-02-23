@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+    margin: 0px;
+}
+
+.header{
+    background-color: black;
+    padding: 15px 0;
+    border-bottom: 4px solid red;
+
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+.logo{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav{
+    display: flex;
+    gap: 20px;
+}
+
+
+.nav a {
+    
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s;
+
+
+
+}
+
+.nav a:hover{
+    color: red;
+}
