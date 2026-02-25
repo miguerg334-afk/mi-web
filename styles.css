@@ -113,7 +113,7 @@ body {
 /* Modifica tu clase .hero */
 .hero {
     display: flex;
-    background: linear-gradient(to right,rgba(0, 0, 0, 0.726) 0%, rgba(0, 0, 0, 0.253) 100%);
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.966) 0%, rgba(0, 0, 0, 0.253) 100%);
     height: 70vh; /* Bajamos un poco el alto para que no se estire tanto la foto */
     background-color: transparent; /* Permite ver el fondo del body o pon #000 */
     color: rgb(255, 255, 255);
@@ -209,7 +209,7 @@ body {
         text-align: center;
         background: linear-gradient(to right,rgba(0, 0, 0, 0.966) 0%, rgba(0, 0, 0, 0.253) 100%);
         align-items: center; /* Centra el botón y el título */
-        border-bottom: 2px solid #ffffff;
+        
     }
 
     .hero-content h1 {
