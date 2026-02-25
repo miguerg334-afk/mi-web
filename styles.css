@@ -42,7 +42,7 @@ body {
     color: white;
     text-decoration: none;
     margin: 0 15px;
-    transition: 0.3s;
+    
 
 
 
@@ -73,7 +73,7 @@ body {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: rgb(255, 153, 0);
+        background-color: #000000;
         flex-direction: column;
         align-items: center;
         padding: 1rem 0;
@@ -93,7 +93,7 @@ body {
     .nav a {
         opacity: 0;
         transform: translateY(20px);
-        transition: all 0.3s ease;
+        transition: all 0.1s ease;
     }
 
     .nav.active a {
@@ -118,6 +118,8 @@ body {
     background-color: transparent; /* Permite ver el fondo del body o pon #000 */
     color: rgb(255, 255, 255);
     overflow: hidden;
+    
+   
 }
 
 /* Lado Izquierdo: Texto */
@@ -196,6 +198,7 @@ body {
         flex-direction: column; /* Apila los bloques */
         height: auto; 
         display: flex;
+        
     }
 
     /* 1. EL TEXTO ARRIBA */
@@ -206,6 +209,7 @@ body {
         text-align: center;
         background: linear-gradient(to right,rgba(0, 0, 0, 0.966) 0%, rgba(0, 0, 0, 0.253) 100%);
         align-items: center; /* Centra el botón y el título */
+        border-bottom: 2px solid #ffffff;
     }
 
     .hero-content h1 {
@@ -229,8 +233,9 @@ body {
 
     .feature {
         padding: 20px;
+        border-top: none;
         backdrop-filter: none;
-        background: linear-gradient(to right,rgba(0, 0, 0, 0.966) 0%, rgba(0, 0, 0, 0.253) 100%);
+        background: linear-gradient(to right,rgba(0, 0, 0, 0.616) 0%, rgba(0, 0, 0, 0.253) 100%);
         /* Un poco más oscuro para que se lea bien sobre la foto */
     }
 }
