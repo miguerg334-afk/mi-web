@@ -1,12 +1,16 @@
-body{
-    background-color: rgb(0, 0, 0);
-    margin: 0px;
+body {
+    background: #000 url('img/fondo-hero.webp') no-repeat center center fixed ;
+    background-size: cover ;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .header{
     background-color: black;
     padding: 15px 0;
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid #ff4d4d;
 
 }
 
@@ -103,4 +107,99 @@ body{
     .nav.active a:nth-child(4){transition-delay: 0.4s;}
 
 
+}
+
+/* Contenedor Principal */
+.hero {
+    display: flex;
+    height: 90vh; /* Ocupa el 90% de la altura de la pantalla */
+    background-color: #0b0b0b00; /* Fondo oscuro como en la imagen */
+    color: white;
+    overflow: hidden;
+}
+
+/* Lado Izquierdo: Texto */
+.hero-content {
+    flex: 1; /* Toma el 50% del ancho */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.subtitle {
+    color: #ff4d4d; /* Rojo para seguridad vial */
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.btn-main {
+    background-color: #004a99; 
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    width: fit-content;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Lado Derecho: Imagen */
+.hero-image {
+    flex: 1;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('tu-imagen-seguridad.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end; /* Alinea los iconos abajo */
+    padding: 40px;
+}
+
+/* Los 3 bloques de abajo (Features) */
+.features-overlay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.feature {
+    background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    backdrop-filter: blur(5px); /* Efecto cristal esmerilado */
+    padding: 20px;
+    border-top: 2px solid #ff4d4d;
+}
+
+/* Media Query para Tablets y Celulares (menos de 768px) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Apila el contenido verticalmente */
+        height: auto; /* Permite que el alto crezca según el contenido */
+    }
+
+    .hero-content {
+        padding: 60px 20px; /* Más espacio arriba y abajo, menos a los lados */
+        order: 2; /* Pone el texto debajo de la imagen si lo prefieres */
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem; /* Reduce el tamaño de la letra para que quepa */
+    }
+
+    .hero-image {
+        height: 400px; /* Le damos una altura fija a la imagen en móvil */
+        order: 1; /* La imagen aparece primero arriba */
+    }
+
+    .features-overlay {
+        grid-template-columns: 1fr; /* Los iconos pasan de 2 columnas a 1 sola */
+        gap: 10px;
+    }
 }
