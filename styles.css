@@ -47,3 +47,27 @@ body{
 .nav a:hover{
     color: red;
 }
+
+.btn{
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* esto es pal responsive en cel */
+
+@media (max-width: 768px){
+    .btn{
+        display: block;
+    }
+    .nav{
+        position: fixed;
+        top: 60px;
+    }
+
+
+}
