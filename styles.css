@@ -76,6 +76,7 @@ body{
         clip-path: circle(0px at 90%
         -10%);
         pointer-events: none;
+        transition: all 0.3s ease-in-out;
     }
 
     .nav.active{
@@ -85,21 +86,21 @@ body{
 
     }
 
-    .nav{
+    .nav a {
         opacity: 0;
         transform: translateY(20px);
         transition: all 0.3s ease;
     }
 
-    .nav.active{
+    .nav.active a {
         opacity: 1;
         transform: translateY(0);
     }
 
-    .nav:nth-child(1){transition-delay: 0.1s;}
-    .nav:nth-child(2){transition-delay: 0.2s;}
-    .nav:nth-child(3){transition-delay: 0.3s;}
-    .nav:nth-child(4){transition-delay: 0.4s;}
+    .nav.active a:nth-child(1){transition-delay: 0.1s;}
+    .nav.active a:nth-child(2){transition-delay: 0.2s;}
+    .nav.active a:nth-child(3){transition-delay: 0.3s;}
+    .nav.active a:nth-child(4){transition-delay: 0.4s;}
 
 
 }
