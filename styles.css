@@ -216,6 +216,7 @@ a{
         height: auto; 
         display: flex;
         
+        
     }
 
     /* 1. EL TEXTO ARRIBA */
@@ -226,6 +227,7 @@ a{
         text-align: center;
         background: linear-gradient(to right,rgba(0, 0, 0, 0.966) 0%, rgba(0, 0, 0, 0.253) 100%);
         align-items: center; /* Centra el botón y el título */
+        
         
     }
 
@@ -246,10 +248,11 @@ a{
         grid-template-columns: 1fr; /* Un cuadro debajo de otro para que no se amontonen */
         gap: 0;
         width: 100%;
+        
     }
 
     .feature {
-        padding: 20px;
+        padding: 40px;
         border-top: none;
         backdrop-filter: none;
         background: linear-gradient(to right,rgba(0, 0, 0, 0.616) 0%, rgba(0, 0, 0, 0.253) 100%);
@@ -361,11 +364,12 @@ span {
 .dad1{
     width: 70%;
     display:flex ;
-    background-color: #161616;
+    background: linear-gradient(to right, rgb(22, 22, 22),rgb(10, 10, 10));
     justify-content: center;
     align-items: center;
     padding: 20px 20px 0px 30px;
     border-radius: 20px;
+
 }
 
 .dad1:hover{
@@ -388,7 +392,7 @@ span {
         width: 90%; /* Aumentamos el ancho en móviles para aprovechar el espacio */
         flex-direction: column; /* Alinea los hijos verticalmente */
         text-align: center; /* Opcional: centra el texto para que se vea mejor */
-        padding: 20px; /* Ajustamos el padding para que sea uniforme */
+        padding: 20px 20px 0px 20px; /* Ajustamos el padding para que sea uniforme */
     }
 
     .text {
